@@ -16,7 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <main className="flex-1">{children}</main>
+
+        <footer className="flex items-center justify-center w-full max-w-4xl mt-8">
+          <p className="text-xs text-center text-gray-500">
+            © Illustrations designed by Felix Wong and under CC0 license
+          </p>
+        </footer>
+      </body>
     </html>
   );
 }

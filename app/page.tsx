@@ -4,7 +4,7 @@ import { AvatarImage, Avatar } from "@/components/ui/avatar";
 
 export default function Component() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-white">
+    <div className="flex flex-col items-center justify-center p-8 bg-white">
       <header className="flex items-center justify-between w-full max-w-6xl">
         <div className="flex items-center space-x-2">
           <PuzzleIcon className="h-6 w-6" />
@@ -81,11 +81,6 @@ export default function Component() {
             <ChevronDownIcon className="h-4 w-4 ml-1" />
           </Button>
         </div>
-        <footer className="flex items-center justify-center w-full max-w-4xl mt-8">
-          <p className="text-xs text-center text-gray-500">
-            © Illustrations designed by Felix Wong and under CC0 license
-          </p>
-        </footer>
       </main>
     </div>
   );
